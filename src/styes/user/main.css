@@ -1,0 +1,44 @@
+:root {
+  --default-color: #078553;
+}
+
+.default-bg {
+  background: var(--default-color) !important;
+}
+
+#Header {
+  padding: 8px 0;
+}
+
+.nav-link-styles,
+.nav-link-styles:hover {
+  cursor: pointer;
+  font-weight: lighter;
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.form-group input:focus {
+  background: #0e031683 !important;
+  border: 1px solid #b72d3b !important;
+  color: white;
+}
+
+.submit {
+  width: 100%;
+  margin: 0 20px;
+  background: linear-gradient(to left, #286489, #ed3a48);
+  color: white !important;
+  font-size: 14px;
+}
+
+.modal-styles {
+  background: linear-gradient(to right, #64d593, #6fc2f2, #8a9c24) !important;
+  border: 10px solid #000 !important;
+  color: white !important;
+  padding-bottom: 20px !important;
+}
