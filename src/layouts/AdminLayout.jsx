@@ -10,12 +10,12 @@ export default function AdminLayout() {
     }, [])
     return (
         <>
-            <div class="wrapper">
+            <div className="wrapper">
                 <Nav />
                 <Sidebar />
                 <Main />
 
-                <aside class="control-sidebar control-sidebar-dark">
+                <aside className="control-sidebar control-sidebar-dark">
                 </aside>
             </div>
         </>
