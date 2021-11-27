@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\AnswerController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ClubController;
+use App\Http\Controllers\GameController;
 use App\Http\Controllers\NoticeController;
+use App\Http\Controllers\QuestionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -33,3 +36,9 @@ Route::apiResource('clubs', ClubController::class);
 // auth
 Route::post('user/register', [AuthController::class, 'register']);
 Route::post('user/login', [AuthController::class, 'login']);
+
+
+// games
+Route::apiResource('games', GameController::class);
+Route::apiResource('questions', QuestionController::class);
+Route::apiResource('answers', AnswerController::class);

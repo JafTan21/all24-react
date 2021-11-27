@@ -22,7 +22,6 @@ function App() {
 
   useEffect(() => {
 
-    console.log(JSON.parse(localStorage.getItem('token')));
     axios.post('/api/token-is-valid')
       .then(res => {
         if (res.data.status) {

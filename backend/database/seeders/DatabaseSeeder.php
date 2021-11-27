@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Notice;
+use App\Models\Question;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -30,7 +31,12 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('dev@dev.com'),
             'club_id' => 1,
             'phone' => '123',
+        ]);
 
+        $this->call([
+            GameSeeder::class,
+            QuestionSeeder::class,
+            AnswerSeeder::class,
         ]);
     }
 }
